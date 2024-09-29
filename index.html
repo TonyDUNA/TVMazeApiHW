@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Поиск ТВ-шоу</h1>
+    <form id="searchField">
+      <input type="text" id="searchInput" placeholder="search" name="search">
+      <button type="submit">Search</button>
+      <button type="button" id="clearSearch">clear Search</button>
+      <select id="sortSelect" class="form-select" aria-label="Default select example">
+        <option selected>Sort by</option>
+        <option value="name">Name</option>
+        <option value="genre">Genre</option>
+
+      </select>
+  </div>
+
+
+
+  <div id="showList" class="container"></div>
+
+
+
+  </form>
+  </div>
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+
+</html>
